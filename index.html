@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontsss -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
+    <!-- icon-->
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="/assets/home_files/image-asset(2).jpeg"
+      sizes="any"
+    />
 
-	<!-- icon-->
-	<link rel="icon" type="image/jpeg" href="/assets/home_files/image-asset(2).jpeg" sizes="any" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/css/styles.css" />
 
-	<!-- styles -->
-	<link rel="stylesheet" href="styles/css/styles.css">
+    <title>Hester</title>
+  </head>
 
-	<title>Hester</title>
-</head>
+  <body>
+    <header class="header__container">
+      <!-- header -->
+      <section class="header">
+        <h1 class="title">Hester</h1>
+        <nav class="navbar">
+          <!-- TODO: Agregar links-->
+          <a class="navLinks" href="store.html">Tienda</a>
+          <a class="navLinks" href="cart.html"
+            ><img
+              src="/assets/shopping-cart.svg"
+              alt="Shopping Cart"
+              width="25"
+          /></a>
+        </nav>
+      </section>
+      <!-- hero -->
+      <section class="hero">
+        <h2>Perfección en encurtidos</h2>
+        <!-- TODO: Agregar link al store -->
+        <a class="button" href="">Comprar ahora</a>
+      </section>
+    </header>
+    <main class="indexMain">
+      <!-- vista previa del shop? -->
+      <section class="shopPreview">
+        <section class="shopPreview__texts">
+          <h3 class="main__titles">Solo ingredientes de la más alta calidad</h3>
+          <p class="main__paragraph">
+            De hecho, nosotros cultivamos la mayor parte en nuestra granja de 17
+            acres.
+          </p>
+        </section>
 
-<body>
+        <!-- TODO: poner links al shop -->
+        <section class="shopPreview___products">
+          <a href=""
+            ><img
+              class="productSize"
+              src="/assets/home_files/image-asset.jpeg"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="productSize"
+              src="/assets/home_files/image-asset(1).jpeg"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="productSize"
+              src="/assets/home_files/image-asset(2).jpeg"
+              alt=""
+          /></a>
+        </section>
 
-	<header class="header__container">
+        <a class="buttonOpcion2" href="">Comprar ahora</a>
+      </section>
 
-		<!-- header -->
-		<section class="header">
-			<h1 class="title">Hester</h1>
-			<nav class="navbar">
-				<!-- TODO: Agregar links-->
-				<a class="navLinks" href="store.html">Tienda</a>
-				<a class="navLinks" href="cart.html"><img src="/assets/shopping-cart.svg" alt="Shopping Cart"
-						width="25"></a>
-			</nav>
-		</section>
-		<!-- hero -->
-		<section class="hero">
+      <!-- imagen del final -->
+      <section class="imageDecoration__Container">
+        <img
+          class="imageDecoration"
+          src="/assets/home_files/pink-image.jpg"
+          alt=""
+        />
+      </section>
 
-			<h2>Perfección en encurtidos</h2>
-			<!-- TODO: Agregar link al store -->
-			<a class="button" href="">Comprar ahora</a>
+      <article class="shopPreview">
+        <h4 class="main__titles">What’s the Dill?</h4>
+        <p class="main__paragraph">
+          Regístrate con tu dirección de correo electrónico para recibir
+          noticias y actualizaciones.
+        </p>
 
-		</section>
+        <a class="buttonOpcion2" href="">Suscribirme</a>
 
-	</header>
-	<main class="indexMain">
+        <section class="shopPreview___products">
+          <a href=""
+            ><img
+              class="productSize"
+              src="/assets/home_files/pickels.jpeg"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="productSize"
+              src="/assets/home_files/hot-pepper.jpeg"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="productSize"
+              src="/assets/home_files/cabbage.jpeg"
+              alt=""
+          /></a>
+        </section>
+      </article>
+    </main>
 
-		<!-- vista previa del shop? -->
-		<section class="shopPreview">
+    <footer>
+      <h4>Hester</h4>
 
-			<section class="shopPreview__texts">
-				<h3 class="main__titles">Solo ingredientes de la más alta calidad</h3>
-				<p class="main__paragraph">De hecho, nosotros cultivamos la mayor parte en nuestra granja de 17
-					acres.</p>
-			</section>
+      <p>
+        123 Calle de ejemplo<br />Nueva York, NY 10000<br />(555) 555-555<br />Inspirado
+        en un diseño de
+        <a href="https://www.squarespace.com/" target="_blank">Squarespace</a>
+      </p>
+    </footer>
 
-			<!-- TODO: poner links al shop -->
-			<section class="shopPreview___products">
-				<a href=""><img class="productSize" src="/assets/home_files/image-asset.jpeg" alt=""></a>
-				<a href=""><img class="productSize" src="/assets/home_files/image-asset(1).jpeg" alt=""></a>
-				<a href=""><img class="productSize" src="/assets/home_files/image-asset(2).jpeg" alt=""></a>
-			</section>
-
-			<a class="buttonOpcion2" href="">Comprar ahora</a>
-		</section>
-
-		<!-- imagen del final -->
-		<section class="imageDecoration__Container">
-			<img class="imageDecoration" src="/assets/home_files/pink-image.jpg" alt="">
-		</section>
-
-		<article class="shopPreview">
-			<h4 class="main__titles">What’s the Dill?</h4>
-			<p class="main__paragraph">Regístrate con tu dirección de correo electrónico para recibir noticias y
-				actualizaciones.</p>
-
-			<a class="buttonOpcion2" href="">Suscribirme</a>
-
-			<section class="shopPreview___products">
-				<a href=""><img class="productSize" src="/assets/home_files/pickels.jpeg" alt=""></a>
-				<a href=""><img class="productSize" src="/assets/home_files/hot-pepper.jpeg" alt=""></a>
-				<a href=""><img class="productSize" src="/assets/home_files/cabbage.jpeg" alt=""></a>
-			</section>
-
-
-		</article>
-	</main>
-
-
-	<footer>
-		<h4>Hester</h4>
-
-		<p>123 Calle de ejemplo<br>Nueva York, NY 10000<br>(555) 555-555<br>Inspirado en un diseño de <a
-				href="https://www.squarespace.com/" target="_blank">Squarespace</a></p>
-
-	</footer>
-
-
-	<!-- scripts -->
-	<script src=""></script>
-</body>
-
+    <!-- scripts -->
+    <script src=""></script>
+  </body>
 </html>
