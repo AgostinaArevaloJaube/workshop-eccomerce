@@ -1,0 +1,59 @@
+// HEADER
+.payment__header {
+	padding: 20px;
+	border: 2px solid rgb(221, 221, 221);
+
+	.payment__title {
+		font-weight: 500;
+		font-size: 1.5em;
+	}
+}
+
+// MAIN
+.grayBackground {
+	background-color: rgb(245, 245, 245);
+}
+
+.noBorder{
+	border: none;
+}
+
+.forms_container {
+	padding: 10px;
+}
+
+.formStyle {
+	margin: 40px auto;
+	padding: 30px;
+	width: 50%;
+	border: 2px solid rgb(221, 221, 221);
+	background-color: white;
+}
+
+
+.formTitle {
+	font-weight: 500;
+	font-size: 1.5em;
+	padding-bottom: 10px;
+}
+
+
+.paymentButtons {
+		margin: 15px auto;
+		padding: 10px 10px;
+		width: 50%;
+		display: block;
+		border: none;
+		font-size: 20px;
+		color: white;
+		background-color: rgb(90, 89, 89);
+		text-align: center;
+}
+
+.inputs__style {
+	padding: 10px;
+	display: block;
+	margin: 10px auto;
+	width: 100%;
+	border: 1px solid rgb(221, 221, 221);
+}

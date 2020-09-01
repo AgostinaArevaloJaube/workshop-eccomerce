@@ -23,100 +23,96 @@
 		<h1 class="payment__title">Hester</h1>
 	</header>
 
-	<main class="background">
-		<!-- Carrito -->
-		<form class="formStyle" action="">
-			<p class="formTitle">Acá va el carrito de compras</p>
-		</form>
+	<main class="grayBackground">
 
-		<!-- Correo -->
-		<form class="formStyle" action="">
-			<p class="formTitle">1. Tu correo electrónico</p>
-			<input type="email" name="email" placeholder="nombre@email.com">
-			<p>Recibirás recibos y notificaciones en esta dirección de correo.</p>
-			<input type="submit" value="Continuar">
-		</form>
+		<section class="forms_container">
+			<!-- Carrito -->
+			<form class="formStyle" action="">
+				<p class="formTitle">Acá va el carrito de compras</p>
+			</form>
 
-		<!-- Datos de envio -->
-		<form class="formStyle" action="">
-			<p class="formTitle">2. Envío</p>
-			<input type="text" name="nombre" placeholder="Nombre">
-			<input type="text" name="apellido" placeholder="Apellido">
-			<br>
-			<select name="paisresidencia">
-				<option value="Argentina" id="AR">Argentina</option>
-				<option value="Chile" id="CL">Chile</option>
-				<option value="Uruguay" id="UY">Uruguay</option>
-			</select>
-			<br>
-			<input type="text" name="cp" placeholder="Código Postal">
-			<input type="text" name="ciudad" placeholder="Ciudad">
-			<br>
-			<input type="text" name="direccion" placeholder="Direccion">
-			<br>
-			<input type="text" name="telefono" placeholder="Numero de telefono">
-			<br>
-			<input type="submit" value="Continuar">
-		</form>
+			<!-- Correo -->
+			<form class="formStyle" action="">
+				<p class="formTitle">1. Tu correo electrónico</p>
+				<input class="inputs__style" type="email" name="email" placeholder="nombre@email.com">
+				<p>Recibirás recibos y notificaciones en esta dirección de correo.</p>
+				<input class="paymentButtons" type="submit" value="Continuar">
+			</form>
 
-		<!-- Pago -->
+			<!-- Datos de envio -->
+			<form class="formStyle" action="">
+				<p class="formTitle">2. Envío</p>
+				<input class="inputs__style" type="text" name="nombre" placeholder="Nombre">
+				<input class="inputs__style" type="text" name="apellido" placeholder="Apellido">
+				<select class="inputs__style" name="paisresidencia">
+					<option value="Argentina" id="AR">Argentina</option>
+					<option value="Chile" id="CL">Chile</option>
+					<option value="Uruguay" id="UY">Uruguay</option>
+				</select>
+				<input class="inputs__style" type="text" name="cp" placeholder="Código Postal">
+				<input class="inputs__style" type="text" name="ciudad" placeholder="Ciudad">
+				<input class="inputs__style" type="text" name="direccion" placeholder="Direccion">
+				<input class="inputs__style" type="text" name="telefono" placeholder="Numero de telefono">
+				<input class="paymentButtons" type="submit" value="Continuar">
+			</form>
 
-		<form class="formStyle" autocomplete="off" novalidate>
-			<p class="formTitle">3. Pago</p>
-			<fieldset class="noBorder">
-				<label for="card-number">Número de Tarjeta</label>
-				<input type="num" id="card-number" class="input-cart-number" maxlength="16" />
-			</fieldset>
-			<fieldset class="noBorder">
-				<label for="card-holder">Nombre</label>
-				<input type="text" id="card-holder" />
-				<p>Exactamente como figura en la tarjeta</p>
-			</fieldset>
-			<fieldset class="fieldset-expiration noBorder">
-				<label for="card-expiration-month">Fecha de Expiración</label>
-				<div class="select">
-					<select id="card-expiration-month">
-						<option></option>
-						<option>01</option>
-						<option>02</option>
-						<option>03</option>
-						<option>04</option>
-						<option>05</option>
-						<option>06</option>
-						<option>07</option>
-						<option>08</option>
-						<option>09</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-					</select>
-				</div>
-				<div class="select">
-					<select id="card-expiration-year">
-						<option></option>
-						<option>2020</option>
-						<option>2021</option>
-						<option>2022</option>
-						<option>2023</option>
-						<option>2024</option>
-						<option>2025</option>
-						<option>2026</option>
-						<option>2027</option>
-						<option>2028</option>
-						<option>2029</option>
-						<option>2030</option>
-					</select>
-				</div>
-			</fieldset>
-			<fieldset class="fieldset-ccv noBorder">
-				<label for="card-ccv">CCV</label>
-				<input type="text" id="card-ccv" maxlength="3" />
-			</fieldset>
-			<button class="btn"><i class="fa fa-lock"></i> Confirmar compra</button>
+			<!-- Pago -->
 
-		</form>
+			<form class="formStyle" autocomplete="off" novalidate>
+				<p class="formTitle">3. Pago</p>
+				<fieldset class="noBorder">
+					<label for="card-number">Número de Tarjeta</label>
+					<input type="num" id="card-number" class="input-cart-number inputs__style" maxlength="16" />
+				</fieldset>
+				<fieldset class="noBorder">
+					<label for="card-holder">Nombre <i>(Exactamente como figura en la tarjeta)</i></label>
+					<input type="text" id="card-holder" class="inputs__style" />
+				</fieldset>
+				<fieldset class="fieldset-expiration noBorder">
+					<label for="card-expiration-month">Fecha de expiración</label>
+					<div class="select">
+						<select class="inputs__style" id="card-expiration-month" placeholder="Mes">
+							<option>Mes</option>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+							<option>04</option>
+							<option>05</option>
+							<option>06</option>
+							<option>07</option>
+							<option>08</option>
+							<option>09</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select>
+					</div>
+					<div class="select">
+						<select class="inputs__style" id="card-expiration-year" placeholder="Año">
+							<option>Año</option>
+							<option>2020</option>
+							<option>2021</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+							<option>2027</option>
+							<option>2028</option>
+							<option>2029</option>
+							<option>2030</option>
+						</select>
+					</div>
+				</fieldset>
+				<fieldset class="fieldset-ccv noBorder">
+					<input class="inputs__style" type="text" id="card-ccv" maxlength="3" placeholder="CVV"/>
+				</fieldset>
+				<input class="paymentButtons" type="submit" value="Confirmar compra">
 
+			</form>
+		</section>
 	</main>
+
 
 	<!-- script -->
 </body>

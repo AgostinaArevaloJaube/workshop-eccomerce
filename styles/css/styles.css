@@ -66,24 +66,24 @@
   color: #e47c6c;
 }
 
-main .shopPreview {
+.indexMain .shopPreview {
   padding: 9% 8%;
 }
 
-main .main__titles {
+.indexMain .main__titles {
   font-size: 2em;
   font-weight: 500;
   text-align: center;
 }
 
-main .main__paragraph {
+.indexMain .main__paragraph {
   font-size: 18px;
   font-weight: 100;
   line-height: 5em;
   text-align: center;
 }
 
-main .shopPreview___products {
+.indexMain .shopPreview___products {
   margin: 5% auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,11 +92,11 @@ main .shopPreview___products {
       justify-content: space-around;
 }
 
-main .shopPreview___products .productSize {
+.indexMain .shopPreview___products .productSize {
   width: 100%;
 }
 
-main .buttonOpcion2 {
+.indexMain .buttonOpcion2 {
   margin: 10px auto;
   padding: 25px 10px;
   width: 30%;
@@ -107,7 +107,7 @@ main .buttonOpcion2 {
   text-align: center;
 }
 
-main .imageDecoration {
+.indexMain .imageDecoration {
   max-width: 100%;
 }
 
@@ -118,5 +118,61 @@ footer {
   letter-spacing: 1px;
   line-height: 2.5em;
   font-weight: 100;
+}
+
+.payment__header {
+  padding: 20px;
+  border: 2px solid #dddddd;
+}
+
+.payment__header .payment__title {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.grayBackground {
+  background-color: whitesmoke;
+}
+
+.noBorder {
+  border: none;
+}
+
+.forms_container {
+  padding: 10px;
+}
+
+.formStyle {
+  margin: 40px auto;
+  padding: 30px;
+  width: 50%;
+  border: 2px solid #dddddd;
+  background-color: white;
+}
+
+.formTitle {
+  font-weight: 500;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.paymentButtons {
+  margin: 15px auto;
+  padding: 10px 10px;
+  width: 50%;
+  display: block;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: #5a5959;
+  text-align: center;
+}
+
+.inputs__style {
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  border: 1px solid #dddddd;
 }
 /*# sourceMappingURL=styles.css.map */
