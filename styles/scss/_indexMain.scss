@@ -1,0 +1,43 @@
+main {
+	.shopPreview {
+		padding: 9% 8%;
+	}
+
+	.main__titles {
+		font-size: 2em;
+		font-weight: 500;
+		text-align: center;
+	}
+	
+	.main__paragraph {
+		font-size: 18px;
+		font-weight: 100;
+		line-height: 5em;
+		text-align: center;
+	}
+
+	.shopPreview___products {
+		margin: 5% auto;
+		display: flex;
+		justify-content: space-around;
+
+		.productSize {
+			width: 100%;
+		}
+	}
+
+	.buttonOpcion2 {
+		margin: 10px auto;
+		padding: 25px 10px;
+		width: 30%;
+		display: block;
+		font-size: 20px;
+		color: white;
+		background-color: $pink;
+		text-align: center;
+	}
+
+	.imageDecoration {
+		max-width: 100%;
+	}
+}

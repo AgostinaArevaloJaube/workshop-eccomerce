@@ -1,0 +1,52 @@
+.header__container {
+	width: 100%;
+	background-color: #e4b46b;
+
+	// HEADER - NAVBAR
+	.header {
+		display: flex;
+		min-height: 15vh;
+		justify-content: space-between;
+		padding: 30px 40px;
+
+		.title {
+			color: white;
+			font-weight: 400;
+			font-size: 26px;
+			letter-spacing: 1px;
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+			color: white;
+			font-size: 20px;
+
+			.navLinks {
+				color: white;
+			}
+		}
+	}
+
+	// ACA ESTA EL HER0
+	.hero {
+		min-height: 100vh;
+		padding: 18% 10%;
+		color: white;
+		font-size: 2.2em;
+		letter-spacing: 1px;
+		font-weight: 400;
+		text-align: center;
+
+		.button {
+			margin: 10px auto;
+			padding: 25px 10px;
+			width: 30%;
+			display: block;
+			font-size: 20px;
+			background-color: white;
+			color: $pink;
+		}
+	}
+}

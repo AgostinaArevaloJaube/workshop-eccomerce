@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header__container {
+  width: 100%;
+  background-color: #e4b46b;
+}
+
+.header__container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 15vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 40px;
+}
+
+.header__container .header .title {
+  color: white;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.header__container .header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.header__container .header .navbar .navLinks {
+  color: white;
+}
+
+.header__container .hero {
+  min-height: 100vh;
+  padding: 18% 10%;
+  color: white;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header__container .hero .button {
+  margin: 10px auto;
+  padding: 25px 10px;
+  width: 30%;
+  display: block;
+  font-size: 20px;
+  background-color: white;
+  color: #e47c6c;
+}
+
+main .shopPreview {
+  padding: 9% 8%;
+}
+
+main .main__titles {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+main .main__paragraph {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 5em;
+  text-align: center;
+}
+
+main .shopPreview___products {
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .shopPreview___products .productSize {
+  width: 100%;
+}
+
+main .buttonOpcion2 {
+  margin: 10px auto;
+  padding: 25px 10px;
+  width: 30%;
+  display: block;
+  font-size: 20px;
+  color: white;
+  background-color: #e47c6c;
+  text-align: center;
+}
+
+main .imageDecoration {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #e47c6c;
+  color: white;
+  padding: 5%;
+  letter-spacing: 1px;
+  line-height: 2.5em;
+  font-weight: 100;
+}
+/*# sourceMappingURL=styles.css.map */
