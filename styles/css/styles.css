@@ -9,7 +9,6 @@
 
 .header__container {
   width: 100%;
-  background-color: #e4b46b;
 }
 
 .header__container .header {
@@ -54,6 +53,26 @@
   letter-spacing: 1px;
   font-weight: 400;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.header__container .hero #imagen_fondito {
+  position: fixed;
+  size: 65%;
+  z-index: -2;
+  top: -25vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  opacity: 50%;
+  -webkit-filter: brightness(65%);
+          filter: brightness(65%);
 }
 
 .header__container .hero .button {
@@ -64,6 +83,10 @@
   font-size: 20px;
   background-color: white;
   color: #e47c6c;
+}
+
+.indexMain {
+  background-color: #e4b46b;
 }
 
 .indexMain .shopPreview {
@@ -175,4 +198,3 @@ footer {
   width: 100%;
   border: 1px solid #dddddd;
 }
-/*# sourceMappingURL=styles.css.map */
