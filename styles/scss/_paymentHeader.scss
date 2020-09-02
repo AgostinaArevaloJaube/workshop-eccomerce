@@ -6,6 +6,7 @@
 	.payment__title {
 		font-weight: 500;
 		font-size: 1.5em;
+		color: #000;
 	}
 }
 
@@ -13,9 +14,23 @@
 .grayBackground {
 	background-color: rgb(245, 245, 245);
 }
-
 .noBorder{
 	border: none;
+}
+
+// Carrito de compras 
+.productSelectedImage {
+	width: 15%;
+}
+
+.cart {
+	display: flex;
+	justify-content: space-around;
+}
+
+.totalAmount {
+	font-weight: 500;
+	font-size: 20px;
 }
 
 .forms_container {

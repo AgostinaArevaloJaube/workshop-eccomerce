@@ -31,37 +31,67 @@
 			<!-- Carrito -->
 			<section class="formStyle" action="">
 				<p class="formTitle">Resumen del pedido</p>
-				<img src="/assets/store_files/image-asset(2).jpeg" alt="">
-				<p>Descripción del producto</p>
-				<p>Cantidad</p>
-				<p>Precio</p>
-				<p>Total</p>
+
+				<section class="cart">
+					<img class="productSelectedImage" src="/assets/store_files/image-asset(2).jpeg" alt="">
+					<p>Descripción del producto</p>
+					<p>Cantidad</p>
+					<p>Precio</p>
+				</section>
+				<p class="totalAmount">Total</p>
 			</section>
 
 			<!-- Correo -->
-			<form class="formStyle" action="">
+			<form name="mailForm" class="formStyle" action="">
 				<p class="formTitle">1. Tu correo electrónico</p>
 				<input class="inputs__style" type="email" name="email" placeholder="nombre@email.com">
 				<p>Recibirás recibos y notificaciones en esta dirección de correo.</p>
 				<input class="paymentButtons" type="submit" value="Continuar">
 			</form>
 
-			<!-- Datos de envio -->
-			<form class="formStyle" action="">
-				<p class="formTitle">2. Envío</p>
-				<input class="inputs__style" type="text" name="nombre" placeholder="Nombre">
-				<input class="inputs__style" type="text" name="apellido" placeholder="Apellido">
-				<select class="inputs__style" name="paisresidencia">
-					<option value="Argentina" id="AR">Argentina</option>
-					<option value="Chile" id="CL">Chile</option>
-					<option value="Uruguay" id="UY">Uruguay</option>
-				</select>
-				<input class="inputs__style" type="text" name="cp" placeholder="Código Postal">
-				<input class="inputs__style" type="text" name="ciudad" placeholder="Ciudad">
-				<input class="inputs__style" type="text" name="direccion" placeholder="Direccion">
-				<input class="inputs__style" type="text" name="telefono" placeholder="Numero de telefono">
-				<input class="paymentButtons" type="submit" value="Continuar">
-			</form>
+			<!-- Opciones de envio -->
+
+			<section class="formStyle">
+				<p class="formTitle">2. Formas de entrega</p>
+
+				<form action="">
+					<label for="pickUpMethod"><input type="radio" name="selectionDeliveryMethod"
+							id="pickUpMethod">Pick-up</label>
+					<br>
+					<label for="deliveryMethod"><input type="radio" name="selectionDeliveryMethod"
+							id="deliveryMethod">Entrega a domicilio</label>
+				</form>
+
+				<!-- Retiro en la tienda -->
+
+				<section class="pickUpMethod formStyle">
+					<p>Tu pedido está disponible para pasar a retirar por nuestro showroom. </p>
+					<br>
+					<p>Nuestro <strong> horario de atención</strong> es de <strong>lunes a viernes de 10:00 a
+							18:00.</strong> </p>
+					<br>
+					<p><strong>Dirección: Paseo del Jockey</strong> </p>
+				</section>
+
+
+				<!-- Devivery -->
+				<form name="deliveryMethod" class="formStyle" action="">
+					<p class="formTitle">Envío</p>
+					<input class="inputs__style" type="text" name="nombre" placeholder="Nombre">
+					<input class="inputs__style" type="text" name="apellido" placeholder="Apellido">
+					<select class="inputs__style" name="paisresidencia">
+						<option value="Argentina" id="AR">Argentina</option>
+						<option value="Chile" id="CL">Chile</option>
+						<option value="Uruguay" id="UY">Uruguay</option>
+					</select>
+					<input class="inputs__style" type="text" name="cp" placeholder="Código Postal">
+					<input class="inputs__style" type="text" name="ciudad" placeholder="Ciudad">
+					<input class="inputs__style" type="text" name="direccion" placeholder="Direccion">
+					<input class="inputs__style" type="text" name="telefono" placeholder="Numero de telefono">
+					<input class="paymentButtons" type="submit" value="Continuar">
+				</form>
+
+			</section>
 
 			<!-- Pago -->
 

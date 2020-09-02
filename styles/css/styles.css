@@ -135,6 +135,7 @@ footer {
 .payment__header .payment__title {
   font-weight: 500;
   font-size: 1.5em;
+  color: #000;
 }
 
 .grayBackground {
@@ -143,6 +144,23 @@ footer {
 
 .noBorder {
   border: none;
+}
+
+.productSelectedImage {
+  width: 15%;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.totalAmount {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .forms_container {
