@@ -1,0 +1,44 @@
+body {
+    .header__container{
+    background-color: #ffffff;
+    .header{
+        .title{
+          color: #000000;
+    }
+        .navbar{
+            .navLinks{
+                color: #000000;
+            }
+        }
+    }
+}
+.article__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .article__content{
+        padding: 5px;
+        .article_img{
+            width: 25rem;
+        }
+        .article_text , .article_price{
+            text-align: center;
+        }
+        .btn_añadir{   
+                box-shadow: 3px 4px 0px 0px #899599;
+                background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+                background-color:#ededed;
+                border-radius:15px;
+                border:1px solid #d6bcd6;
+                display:block;
+                cursor:pointer;
+                color:#000000;
+                font-size:17px;
+                padding:7px 25px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #e1e2ed;
+                margin: 0 auto;
+        }
+    }
+} 
+}

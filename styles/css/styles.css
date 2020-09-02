@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -86,7 +87,7 @@
 }
 
 .indexMain {
-  background-color: #e4b46b;
+  background-color: white;
 }
 
 .indexMain .shopPreview {
@@ -198,3 +199,57 @@ footer {
   width: 100%;
   border: 1px solid #dddddd;
 }
+
+body .header__container {
+  background-color: #ffffff;
+}
+
+body .header__container .header .title {
+  color: #000000;
+}
+
+body .header__container .header .navbar .navLinks {
+  color: #000000;
+}
+
+body .article__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .article__container .article__content {
+  padding: 5px;
+}
+
+body .article__container .article__content .article_img {
+  width: 25rem;
+}
+
+body .article__container .article__content .article_text, body .article__container .article__content .article_price {
+  text-align: center;
+}
+
+body .article__container .article__content .btn_añadir {
+  -webkit-box-shadow: 3px 4px 0px 0px #899599;
+          box-shadow: 3px 4px 0px 0px #899599;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ededed), to(#bab1ba));
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #d6bcd6;
+  display: block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 17px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -20,16 +20,23 @@
 
 <body>
 	<header class="payment__header">
-		<h1 class="payment__title">Hester</h1>
+		<a href="/index.html">
+			<h1 class="payment__title">Hester</h1>
+		</a>
 	</header>
 
 	<main class="grayBackground">
 
 		<section class="forms_container">
 			<!-- Carrito -->
-			<form class="formStyle" action="">
-				<p class="formTitle">Acá va el carrito de compras</p>
-			</form>
+			<section class="formStyle" action="">
+				<p class="formTitle">Resumen del pedido</p>
+				<img src="/assets/store_files/image-asset(2).jpeg" alt="">
+				<p>Descripción del producto</p>
+				<p>Cantidad</p>
+				<p>Precio</p>
+				<p>Total</p>
+			</section>
 
 			<!-- Correo -->
 			<form class="formStyle" action="">
@@ -105,7 +112,7 @@
 					</div>
 				</fieldset>
 				<fieldset class="fieldset-ccv noBorder">
-					<input class="inputs__style" type="text" id="card-ccv" maxlength="3" placeholder="CVV"/>
+					<input class="inputs__style" type="text" id="card-ccv" maxlength="3" placeholder="CVV" />
 				</fieldset>
 				<input class="paymentButtons" type="submit" value="Confirmar compra">
 
