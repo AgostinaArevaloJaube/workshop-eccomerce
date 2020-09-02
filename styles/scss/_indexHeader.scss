@@ -1,5 +1,6 @@
 .header__container {
 	width: 100%;
+	
 
 	// HEADER - NAVBAR
 	.header {
@@ -7,12 +8,14 @@
 		min-height: 15vh;
 		justify-content: space-between;
 		padding: 30px 40px;
-
+		background-color: #e5c47c;
+		
 		.title {
 			color: white;
 			font-weight: 400;
 			font-size: 26px;
 			letter-spacing: 1px;
+			z-index: 10;
 		}
 
 		.navbar {
@@ -37,20 +40,22 @@
 		letter-spacing: 1px;
 		font-weight: 400;
 		text-align: center;
-		
-		//CAMBIOS X YISUS
-		display: flex;
-		flex-flow: column;
+		background-color: #e5c47c;
 
-		#imagen_fondito{
-			position: fixed;
-			size: 65%;
-			z-index: -2;
-			top: -25vh;
-			align-self: center;
-			opacity: 50%;
-			filter: brightness(65%);
-		}
+		//CAMBIOS X YISUS
+		// Lo comento porque no lo pude arreglar, agrego un fondo de color mientras. Agos
+		// display: flex;
+		// flex-flow: column;
+
+		// #imagen_fondito{
+		// 	position: fixed;
+		// 	size: 65%;
+		// 	z-index: -2;
+		// 	top: -25vh;
+		// 	align-self: center;
+		// 	opacity: 50%;
+		// 	filter: brightness(65%);
+		// }
 
 		.button {
 			margin: 10px auto;
