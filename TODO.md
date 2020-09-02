@@ -1,2 +1,0 @@
-COSAS POR HACER:
-[ ] 
