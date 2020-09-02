@@ -127,17 +127,6 @@ footer {
   font-weight: 100;
 }
 
-.payment__header {
-  padding: 20px;
-  border: 2px solid #dddddd;
-}
-
-.payment__header .payment__title {
-  font-weight: 500;
-  font-size: 1.5em;
-  color: #000;
-}
-
 .grayBackground {
   background-color: whitesmoke;
 }
@@ -146,16 +135,17 @@ footer {
   border: none;
 }
 
-.productSelectedImage {
-  width: 15%;
-}
-
 .cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 15px;
+}
+
+.productSelectedImage {
+  width: 15%;
 }
 
 .totalAmount {
