@@ -40,16 +40,16 @@ const pickUpMethod = document.querySelector('#pickUpOpcion');;
 
 
 // Tercero: guardar el valor clickeado por el usuario
-const deliveryMethodChosen = document.querySelector('#selectionDelivery').methodChosen.value;
+const deliveryMethodChosen = deliveryMethodForm.methodChosen.value;
 
 // Cuarto: si cuando clickea el valor es igual a entrega a domilicio que sale la clase hidden del elemento.
-const showDelivery = deliveryMethodChosen.addEventListener('click', function () {
+const showDelivery = deliveryMethodForm.addEventListener('click', function () {
 
-  if (deliveryMethodChosen.value === "Entrega a domicilio") {
+  if (deliveryMethodChosen === "Entrega a domicilio") {
     deliveryMethod.classList.remove('hidden');
   } else {
     pickUpMethod.classList.remove('hidden');
   }
 });
 
-
+// ! Entra siempre por el else!!!!!!!!!!!!
