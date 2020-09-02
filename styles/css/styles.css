@@ -20,7 +20,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 40px;
+  padding: 20px 40px;
   background-color: #e5c47c;
 }
 
@@ -103,7 +103,11 @@
   width: 100%;
 }
 
-.indexMain .buttonOpcion2 {
+.indexMain .imageDecoration {
+  max-width: 100%;
+}
+
+.buttonOpcion2 {
   margin: 10px auto;
   padding: 25px 10px;
   width: 30%;
@@ -112,10 +116,6 @@
   color: white;
   background-color: #e47c6c;
   text-align: center;
-}
-
-.indexMain .imageDecoration {
-  max-width: 100%;
 }
 
 footer {
@@ -252,5 +252,16 @@ body .article__container .article__content .btn_añadir {
   text-decoration: none;
   text-shadow: 0px 1px 0px #e1e2ed;
   margin: 0 auto;
+}
+
+.storePayButton {
+  margin: 70px auto;
+  padding: 25px 10px;
+  width: 20%;
+  display: block;
+  font-size: 20px;
+  color: white;
+  background-color: #e47c6c;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -27,18 +27,20 @@
 		}
 	}
 
-	.buttonOpcion2 {
-		margin: 10px auto;
-		padding: 25px 10px;
-		width: 30%;
-		display: block;
-		font-size: 20px;
-		color: white;
-		background-color: $pink;
-		text-align: center;
-	}
 
 	.imageDecoration {
 		max-width: 100%;
 	}
+}
+
+
+.buttonOpcion2 {
+	margin: 10px auto;
+	padding: 25px 10px;
+	width: 30%;
+	display: block;
+	font-size: 20px;
+	color: white;
+	background-color: $pink;
+	text-align: center;
 }

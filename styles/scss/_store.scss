@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
     .article__content{
         padding: 5px;
         .article_img{
@@ -41,4 +42,15 @@ body {
         }
     }
 } 
+}
+
+.storePayButton {
+    margin: 70px auto;
+	padding: 25px 10px;
+	width: 20%;
+    display: block;
+	font-size: 20px;
+	color: white;
+	background-color: $pink;
+    text-align: center;
 }
