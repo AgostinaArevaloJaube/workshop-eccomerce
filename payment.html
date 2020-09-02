@@ -26,15 +26,15 @@
 				<h1 class="title">Hester</h1>
 			</a>
 			<nav class="navbar">
-			<a class="navLinks" href="store.html">Seguir comprando</a>
-		</nav>
+				<a class="navLinks" href="store.html">Seguir comprando</a>
+			</nav>
 		</section>
 	</header>
 
 	<main class="grayBackground">
 
 		<section class="forms_container">
-			
+
 			<!-- Carrito -->
 			<section class="formStyle" action="">
 				<p class="formTitle">Resumen del pedido</p>
@@ -51,7 +51,7 @@
 			<!-- Correo -->
 			<form name="mailForm" class="formStyle" action="">
 				<p class="formTitle">1. Tu correo electrónico</p>
-				<input class="inputs__style" type="email" name="email" placeholder="nombre@email.com">
+				<input class="inputs__style" type="email" name="email" placeholder="nombre@email.com" required>
 				<p>Recibirás recibos y notificaciones en esta dirección de correo.</p>
 				<input class="paymentButtons" type="submit" value="Continuar">
 			</form>
@@ -61,18 +61,24 @@
 			<section class="formStyle">
 				<p class="formTitle">2. Formas de entrega</p>
 
-				<form action="">
-					<label for="pickUpMethod"><input type="radio" name="selectionDeliveryMethod"
-							id="pickUpMethod">Pick-up</label>
+				<form action="" class="deliveryStyle" id="selectionDelivery">
+					<label for="pickUpMethod">
+						<input type="radio" name="methodChosen" id="pickUpMethod" value="Pick-up" required>
+						<p class="chooseMethodStyle">Pick-up</p>
+					</label>
 					<br>
-					<label for="deliveryMethod"><input type="radio" name="selectionDeliveryMethod"
-							id="deliveryMethod">Entrega a domicilio</label>
+					<br>
+					<label for="deliveryMethod">
+						<input type="radio" name="methodChosen" id="deliveryMethod" value="Entrega a domicilio">
+						<p class="chooseMethodStyle">Entrega a domicilio</p>
+					</label>
 				</form>
 
 				<!-- Retiro en la tienda -->
 
-				<section class="pickUpMethod formStyle">
-					<p>Tu pedido está disponible para pasar a retirar por nuestro showroom. </p>
+				<section class="deliveryStyle hidden" id="pickUpOpcion">
+					<p class="formTitle">Retiro en el showroom</p>
+					<p>Su pedido está disponible para pasar a retirar por nuestro showroom. </p>
 					<br>
 					<p>Nuestro <strong> horario de atención</strong> es de <strong>lunes a viernes de 10:00 a
 							18:00.</strong> </p>
@@ -82,19 +88,19 @@
 
 
 				<!-- Devivery -->
-				<form name="deliveryMethod" class="formStyle" action="">
+				<form name="deliveryMethod" class="deliveryStyle hidden" action="" id="deliveryOption">
 					<p class="formTitle">Envío</p>
-					<input class="inputs__style" type="text" name="nombre" placeholder="Nombre">
-					<input class="inputs__style" type="text" name="apellido" placeholder="Apellido">
+					<input class="inputs__style" type="text" name="nombre" placeholder="Nombre" required>
+					<input class="inputs__style" type="text" name="apellido" placeholder="Apellido" required>
 					<select class="inputs__style" name="paisresidencia">
 						<option value="Argentina" id="AR">Argentina</option>
 						<option value="Chile" id="CL">Chile</option>
 						<option value="Uruguay" id="UY">Uruguay</option>
 					</select>
-					<input class="inputs__style" type="text" name="cp" placeholder="Código Postal">
-					<input class="inputs__style" type="text" name="ciudad" placeholder="Ciudad">
-					<input class="inputs__style" type="text" name="direccion" placeholder="Direccion">
-					<input class="inputs__style" type="text" name="telefono" placeholder="Numero de telefono">
+					<input class="inputs__style" type="text" name="cp" placeholder="Código Postal" required>
+					<input class="inputs__style" type="text" name="ciudad" placeholder="Ciudad" required>
+					<input class="inputs__style" type="text" name="direccion" placeholder="Direccion" required>
+					<input class="inputs__style" type="text" name="telefono" placeholder="Numero de telefono" required>
 					<input class="paymentButtons" type="submit" value="Continuar">
 				</form>
 
@@ -102,20 +108,21 @@
 
 			<!-- Pago -->
 
-			<form class="formStyle" autocomplete="off" novalidate>
+			<form name="paymentMethod" class="formStyle" autocomplete="off" novalidate>
 				<p class="formTitle">3. Pago</p>
 				<fieldset class="noBorder">
 					<label for="card-number">Número de Tarjeta</label>
-					<input type="num" id="card-number" class="input-cart-number inputs__style" maxlength="16" />
+					<input type="num" id="card-number" class="input-cart-number inputs__style" maxlength="16"
+						minlength="16" required />
 				</fieldset>
 				<fieldset class="noBorder">
 					<label for="card-holder">Nombre <i>(Exactamente como figura en la tarjeta)</i></label>
-					<input type="text" id="card-holder" class="inputs__style" />
+					<input type="text" id="card-holder" class="inputs__style" required />
 				</fieldset>
 				<fieldset class="fieldset-expiration noBorder">
 					<label for="card-expiration-month">Fecha de expiración</label>
 					<div class="select">
-						<select class="inputs__style" id="card-expiration-month" placeholder="Mes">
+						<select class="inputs__style" id="card-expiration-month" placeholder="Mes" required>
 							<option>Mes</option>
 							<option>01</option>
 							<option>02</option>
@@ -132,7 +139,7 @@
 						</select>
 					</div>
 					<div class="select">
-						<select class="inputs__style" id="card-expiration-year" placeholder="Año">
+						<select class="inputs__style" id="card-expiration-year" placeholder="Año" required>
 							<option>Año</option>
 							<option>2020</option>
 							<option>2021</option>
@@ -149,7 +156,7 @@
 					</div>
 				</fieldset>
 				<fieldset class="fieldset-ccv noBorder">
-					<input class="inputs__style" type="text" id="card-ccv" maxlength="3" placeholder="CVV" />
+					<input class="inputs__style" type="text" id="card-ccv" maxlength="3" placeholder="CVV" required />
 				</fieldset>
 				<input class="paymentButtons" type="submit" value="Confirmar compra">
 
@@ -159,6 +166,7 @@
 
 
 	<!-- script -->
+	<script src="js/main.js"></script>
 </body>
 
 </html>

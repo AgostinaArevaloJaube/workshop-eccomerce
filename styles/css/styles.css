@@ -160,9 +160,21 @@ footer {
 .formStyle {
   margin: 40px auto;
   padding: 30px;
-  width: 50%;
+  width: 60%;
   border: 2px solid #dddddd;
   background-color: white;
+}
+
+.deliveryStyle {
+  margin: 40px auto;
+  padding: 30px;
+  width: 95%;
+  border: 2px solid #dddddd;
+}
+
+.chooseMethodStyle {
+  padding: 10px;
+  display: inline;
 }
 
 .formTitle {
@@ -189,6 +201,10 @@ footer {
   margin: 10px auto;
   width: 100%;
   border: 1px solid #dddddd;
+}
+
+.hidden {
+  display: none;
 }
 
 body .header__container {

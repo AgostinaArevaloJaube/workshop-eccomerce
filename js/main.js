@@ -19,3 +19,37 @@ const añadirHandler = (e) => {
   //guardarlo en nuevo array de localstorage
 };
 btnAñadir.forEach((i) => i.addEventListener("click", añadirHandler));
+
+
+
+
+
+//-------------------------------- AGOS
+
+// Selección del metodo de delivery de la compra
+
+// Primero: guardar el formulario.
+
+const deliveryMethodForm = document.querySelector('#selectionDelivery');
+
+// Segundo: guardar la section de envio y retiro
+
+const deliveryMethod = document.querySelector('#deliveryOption');
+
+const pickUpMethod = document.querySelector('#pickUpOpcion');;
+
+
+// Tercero: guardar el valor clickeado por el usuario
+const deliveryMethodChosen = document.querySelector('#selectionDelivery').methodChosen.value;
+
+// Cuarto: si cuando clickea el valor es igual a entrega a domilicio que sale la clase hidden del elemento.
+const showDelivery = deliveryMethodChosen.addEventListener('click', function () {
+
+  if (deliveryMethodChosen.value === "Entrega a domicilio") {
+    deliveryMethod.classList.remove('hidden');
+  } else {
+    pickUpMethod.classList.remove('hidden');
+  }
+});
+
+
