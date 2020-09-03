@@ -1,276 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- icon-->
-    <link
-      rel="icon"
-      type="image/jpeg"
-      href="/assets/home_files/image-asset(2).jpeg"
-      sizes="any"
-    />
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles/css/styles.css" />
+  <!-- icon-->
+  <link rel="icon" type="image/jpeg" href="/assets/home_files/image-asset(2).jpeg" sizes="any" />
 
-    <title>Hester</title>
-  </head>
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/css/styles.css" />
 
-  <body>
-    <header class="header__container">
-      <section class="header">
-        <a href="/index.html">
-          <h1 class="title">Hester</h1>
-        </a>
-        <nav class="navbar">
-          <a class="navLinks" href="store.html">Seguir comprando</a>
-        </nav>
+  <title>Hester</title>
+</head>
+
+<body>
+  <header class="header__container">
+    <section class="header">
+      <a href="/index.html">
+        <h1 class="title">Hester</h1>
+      </a>
+      <nav class="navbar">
+        <a class="navLinks" href="store.html">Seguir comprando</a>
+      </nav>
+    </section>
+  </header>
+
+  <main class="grayBackground">
+    <section class="forms_container">
+      <!-- Carrito -->
+      <section class="formStyle" action="">
+        <p class="formTitle">Resumen del pedido</p>
+
+        <section class="cart">
+          <img class="productSelectedImage" src="/assets/store_files/image-asset(2).jpeg" alt="" />
+          <p>Descripción del producto</p>
+          <p>Cantidad</p>
+          <p>Precio</p>
+        </section>
+        <p class="totalAmount">Total</p>
       </section>
-    </header>
 
-    <main class="grayBackground">
-      <section class="forms_container">
-        <!-- Carrito -->
-        <section class="formStyle" action="">
-          <p class="formTitle">Resumen del pedido</p>
+      <!-- Correo -->
+      <form name="mailForm" class="formStyle" action="">
+        <p class="formTitle">1. Tu correo electrónico</p>
+        <input class="inputs__style" type="email" name="email" placeholder="nombre@email.com" required />
+        <p>Recibirás recibos y notificaciones en esta dirección de correo.</p>
+        <input class="paymentButtons" type="submit" value="Continuar" />
+      </form>
 
-          <section class="cart">
-            <img
-              class="productSelectedImage"
-              src="/assets/store_files/image-asset(2).jpeg"
-              alt=""
-            />
-            <p>Descripción del producto</p>
-            <p>Cantidad</p>
-            <p>Precio</p>
-          </section>
-          <p class="totalAmount">Total</p>
+      <!-- Opciones de envio -->
+
+      <section class="formStyle">
+        <p class="formTitle">2. Formas de entrega</p>
+
+        <form action="" class="deliveryStyle" id="selectionDelivery">
+          <label for="pickUpMethod">
+            <input type="radio" name="methodChosen" id="pickUpMethod" value="Pick-up" required />
+            <p class="chooseMethodStyle">Pick-up</p>
+          </label>
+          <br />
+          <br />
+          <label for="deliveryMethod">
+            <input type="radio" name="methodChosen" id="deliveryMethod" value="Entrega a domicilio" />
+            <p class="chooseMethodStyle">Entrega a domicilio</p>
+          </label>
+        </form>
+
+        <!-- Retiro en la tienda -->
+
+        <section class="deliveryStyle hidden" id="pickUpOpcion">
+          <p class="formTitle">Retiro en el showroom</p>
+          <p>
+            Su pedido está disponible para pasar a retirar por nuestro
+            showroom.
+          </p>
+          <br />
+          <p>
+            Nuestro <strong> horario de atención</strong> es de
+            <strong>lunes a viernes de 10:00 a 18:00.</strong>
+          </p>
+          <br />
+          <p><strong>Dirección: Paseo del Jockey</strong></p>
         </section>
 
-        <!-- Correo -->
-        <form name="mailForm" class="formStyle" action="">
-          <p class="formTitle">1. Tu correo electrónico</p>
-          <input
-            class="inputs__style"
-            type="email"
-            name="email"
-            placeholder="nombre@email.com"
-            required
-          />
-          <p>Recibirás recibos y notificaciones en esta dirección de correo.</p>
+        <!-- Devivery -->
+        <form name="deliveryMethod" class="deliveryStyle hidden" action="" id="deliveryOption">
+          <p class="formTitle">Envío</p>
+          <input class="inputs__style" type="text" name="nombre" placeholder="Nombre" required />
+          <input class="inputs__style" type="text" name="apellido" placeholder="Apellido" required />
+          <select class="inputs__style" name="paisresidencia">
+            <option value="Argentina" id="AR">Argentina</option>
+            <option value="Chile" id="CL">Chile</option>
+            <option value="Uruguay" id="UY">Uruguay</option>
+          </select>
+          <input class="inputs__style" type="text" name="cp" placeholder="Código Postal" required />
+          <input class="inputs__style" type="text" name="ciudad" placeholder="Ciudad" required />
+          <input class="inputs__style" type="text" name="direccion" placeholder="Direccion" required />
+          <input class="inputs__style" type="text" name="telefono" placeholder="Numero de telefono" required />
           <input class="paymentButtons" type="submit" value="Continuar" />
         </form>
+      </section>
 
-        <!-- Opciones de envio -->
-
-        <section class="formStyle">
-          <p class="formTitle">2. Formas de entrega</p>
-
-          <form action="" class="deliveryStyle" id="selectionDelivery">
-            <label for="pickUpMethod">
-              <input
-                type="radio"
-                name="methodChosen"
-                id="pickUpMethod"
-                value="Pick-up"
-                required
-              />
-              <p class="chooseMethodStyle">Pick-up</p>
-            </label>
-            <br />
-            <br />
-            <label for="deliveryMethod">
-              <input
-                type="radio"
-                name="methodChosen"
-                id="deliveryMethod"
-                value="Entrega a domicilio"
-              />
-              <p class="chooseMethodStyle">Entrega a domicilio</p>
-            </label>
-          </form>
-
-          <!-- Retiro en la tienda -->
-
-          <section class="deliveryStyle hidden" id="pickUpOpcion">
-            <p class="formTitle">Retiro en el showroom</p>
-            <p>
-              Su pedido está disponible para pasar a retirar por nuestro
-              showroom.
-            </p>
-            <br />
-            <p>
-              Nuestro <strong> horario de atención</strong> es de
-              <strong>lunes a viernes de 10:00 a 18:00.</strong>
-            </p>
-            <br />
-            <p><strong>Dirección: Paseo del Jockey</strong></p>
-          </section>
-
-          <!-- Devivery -->
-          <form
-            name="deliveryMethod"
-            class="deliveryStyle hidden"
-            action=""
-            id="deliveryOption"
-          >
-            <p class="formTitle">Envío</p>
-            <input
-              class="inputs__style"
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-              required
-            />
-            <input
-              class="inputs__style"
-              type="text"
-              name="apellido"
-              placeholder="Apellido"
-              required
-            />
-            <select class="inputs__style" name="paisresidencia">
-              <option value="Argentina" id="AR">Argentina</option>
-              <option value="Chile" id="CL">Chile</option>
-              <option value="Uruguay" id="UY">Uruguay</option>
-            </select>
-            <input
-              class="inputs__style"
-              type="text"
-              name="cp"
-              placeholder="Código Postal"
-              required
-            />
-            <input
-              class="inputs__style"
-              type="text"
-              name="ciudad"
-              placeholder="Ciudad"
-              required
-            />
-            <input
-              class="inputs__style"
-              type="text"
-              name="direccion"
-              placeholder="Direccion"
-              required
-            />
-            <input
-              class="inputs__style"
-              type="text"
-              name="telefono"
-              placeholder="Numero de telefono"
-              required
-            />
-            <input class="paymentButtons" type="submit" value="Continuar" />
-          </form>
-        </section>
-
-        <!-- Pago -->
-
-        <form
-          name="paymentMethod"
-          class="formStyle"
-          autocomplete="off"
-          novalidate
-        >
-          <p class="formTitle">3. Pago</p>
-          <fieldset class="noBorder">
+      <!-- Pago -->
+      <form name="paymentMethod" class="formStyle" autocomplete="off" novalidate>
+        <p class="formTitle">3. Pago</p>
+        <fieldset class="noBorder">
             <label for="card-number">Número de Tarjeta</label>
-            <input
-              type="num"
-              id="card-number"
-              class="input-cart-number inputs__style"
-              maxlength="16"
-              minlength="16"
-              required
-            />
-          </fieldset>
-          <fieldset class="noBorder">
-            <label for="card-holder"
-              >Nombre <i>(Exactamente como figura en la tarjeta)</i></label
-            >
-            <input
-              type="text"
-              id="card-holder"
-              class="inputs__style"
-              required
-            />
-          </fieldset>
-          <fieldset class="fieldset-expiration noBorder">
+            <input type="num" oninput="return validacionNumber()" id="card-number" class="input-cart-number inputs__style" maxlength="16"
+                minlength="16" required />
+        </fieldset>
+        <fieldset class="noBorder">
+            <label for="card-holder">Nombre <i>(Exactamente como figura en la tarjeta)</i></label>
+            <input type="text" oninput="return validacionName()" id="card-holder" class="inputs__style" required />
+        </fieldset>
+        <fieldset class="fieldset-expiration noBorder">
             <label for="card-expiration-month">Fecha de expiración</label>
             <div class="select">
-              <select
-                class="inputs__style"
-                id="card-expiration-month"
-                placeholder="Mes"
-                required
-              >
-                <option>Mes</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-              </select>
+                <select class="inputs__style" onclick="return validacionMonthYear()" id="card-expiration-month" placeholder="Mes" required>
+                    <option value= "">Mes</option>
+                    <option value= "1">01</option>
+                    <option value= "2">02</option>
+                    <option value= "3">03</option>
+                    <option value= "4">04</option>
+                    <option value= "5">05</option>
+                    <option value= "6">06</option>
+                    <option value= "7">07</option>
+                    <option value= "8">08</option>
+                    <option value= "9">09</option>
+                    <option value= "10">10</option>
+                    <option value= "11">11</option>
+                    <option value= "12">12</option>
+                </select>
             </div>
             <div class="select">
-              <select
-                class="inputs__style"
-                id="card-expiration-year"
-                placeholder="Año"
-                required
-              >
-                <option>Año</option>
-                <option>2020</option>
-                <option>2021</option>
-                <option>2022</option>
-                <option>2023</option>
-                <option>2024</option>
-                <option>2025</option>
-                <option>2026</option>
-                <option>2027</option>
-                <option>2028</option>
-                <option>2029</option>
-                <option>2030</option>
-              </select>
+                <select class="inputs__style" onclick="return validacionMonthYear()" id="card-expiration-year" placeholder="Año" required>
+                    <option value= "">Año</option>
+                    <option value= "1">2020</option>
+                    <option value= "2">2021</option>
+                    <option value= "3">2022</option>
+                    <option value= "4">2023</option>
+                    <option value= "5">2024</option>
+                    <option value= "6">2025</option>
+                    <option value= "7">2026</option>
+                    <option value= "8">2027</option>
+                    <option value= "9">2028</option>
+                    <option value= "10">2029</option>
+                    <option value= "11">2030</option>
+                </select>
             </div>
-          </fieldset>
-          <fieldset class="fieldset-ccv noBorder">
-            <input
-              class="inputs__style"
-              type="text"
-              id="card-ccv"
-              maxlength="3"
-              placeholder="CVV"
-              required
-            />
-          </fieldset>
-          <input
-            class="paymentButtons"
-            type="submit"
-            value="Confirmar compra"
-          />
-        </form>
-      </section>
-    </main>
+        </fieldset>
+        <fieldset class="fieldset-ccv noBorder">
+            <input class="inputs__style" type="text" oninput="return validacionCVV()" id="card-ccv" maxlength="3" placeholder="CVV" required />
+        </fieldset>
+        <input class="paymentButtons" type="submit" onclick="return validacionCompra()" value="Confirmar compra">
+      </form>
+    </section>
+  </main>
 
-    <!-- script -->
-    <script src="js/payment.js"></script>
-  </body>
+  <!-- script -->
+  <script src="js/payment.js"></script>
+</body>
+
 </html>
