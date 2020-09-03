@@ -238,7 +238,8 @@ body .article__container .article__content .article_img {
   width: 25rem;
 }
 
-body .article__container .article__content .article_text, body .article__container .article__content .article_price {
+body .article__container .article__content .article_text,
+body .article__container .article__content .article_price {
   text-align: center;
 }
 
@@ -249,7 +250,7 @@ body .article__container .article__content .btn_añadir {
   background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
   background-color: #ededed;
   border-radius: 15px;
-  border: 1px solid #d6bcd6;
+  border: none;
   display: block;
   cursor: pointer;
   color: #000000;
@@ -258,6 +259,16 @@ body .article__container .article__content .btn_añadir {
   text-decoration: none;
   text-shadow: 0px 1px 0px #e1e2ed;
   margin: 0 auto;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .article__container .article__content .btn_añadir:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ededed), to(#e5c47c));
+  background: linear-gradient(to bottom, #ededed 5%, #e5c47c 100%);
 }
 
 .storePayButton {

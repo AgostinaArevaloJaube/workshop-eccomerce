@@ -1,56 +1,64 @@
 body {
-    .header__container{
+  .header__container {
     background-color: #ffffff;
-    .header{
-        .titleShop{
+    .header {
+      .titleShop {
+        color: #000000;
+      }
+      .navbar {
+        .navLinksShop {
           color: #000000;
-    }
-        .navbar{
-            .navLinksShop{
-                color: #000000;
-            }
         }
+      }
     }
-}
-.article__container{
+  }
+  .article__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    .article__content{
-        padding: 5px;
-        .article_img{
-            width: 25rem;
+    .article__content {
+      padding: 5px;
+      .article_img {
+        width: 25rem;
+      }
+      .article_text,
+      .article_price {
+        text-align: center;
+      }
+      .btn_añadir {
+        box-shadow: 3px 4px 0px 0px #899599;
+        background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+        background-color: #ededed;
+        border-radius: 15px;
+        border: none;
+        display: block;
+        cursor: pointer;
+        color: #000000;
+        font-size: 17px;
+        padding: 7px 25px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #e1e2ed;
+        margin: 0 auto;
+        outline: none;
+        transition: 0.2s;
+        &:active {
+          box-shadow: none;
+
+          background: linear-gradient(to bottom, #ededed 5%, #e5c47c 100%);
         }
-        .article_text , .article_price{
-            text-align: center;
-        }
-        .btn_añadir{   
-                box-shadow: 3px 4px 0px 0px #899599;
-                background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-                background-color:#ededed;
-                border-radius:15px;
-                border:1px solid #d6bcd6;
-                display:block;
-                cursor:pointer;
-                color:#000000;
-                font-size:17px;
-                padding:7px 25px;
-                text-decoration:none;
-                text-shadow:0px 1px 0px #e1e2ed;
-                margin: 0 auto;
-        }
+      }
     }
-} 
+  }
 }
 
 .storePayButton {
-    margin: 70px auto;
-	padding: 25px 10px;
-	width: 20%;
-    display: block;
-	font-size: 20px;
-	color: white;
-	background-color: $pink;
-    text-align: center;
+  margin: 70px auto;
+  padding: 25px 10px;
+  width: 20%;
+  display: block;
+  font-size: 20px;
+  color: white;
+  background-color: $pink;
+  text-align: center;
 }
