@@ -1,6 +1,42 @@
-let productos = [{ name: "asdf", id: "1" }, {}];
+//Clase Productos
+class Productos {
+  constructor(nombre, valor){
+      this.nombre = nombre;
+      this.valor = valor;
+  }
+}
+//Objetos - Array productos
+let Products = [
+  { 
+     nombre: "Beni Shoga",
+      valor: 10,
+  },
+  {
+      nombre: "Do Chua",
+      valor: 10,
+  },
+  {
+      nombre: "Limones",
+      valor: 10,
+  },
+  {
+      nombre: "Sauerkraut",
+      valor: 10,
+  },
+  {
+      nombre: "Alcaparras",
+      valor: 10,
+  },
+  {
+      nombre: "Remolachas",
+      valor: 10,
+  }
+
+])
+
 let carro = [];
 localStorage.setItem("carro", JSON.stringify(carro));
+
 
 //añadir al carro -D-
 const btnAñadir = document.querySelectorAll("button");
@@ -19,9 +55,6 @@ const añadirHandler = (e) => {
   //guardarlo en nuevo array de localstorage
 };
 btnAñadir.forEach((i) => i.addEventListener("click", añadirHandler));
-
-
-
 
 
 // TODO ------------------------------ AGOS
@@ -53,5 +86,8 @@ const showDelivery = deliveryMethodForm.addEventListener('click', function () {
   }
 
 });
+
+
+
 
 
