@@ -38,12 +38,12 @@ const deliveryMethod = document.querySelector('#deliveryOption');
 
 const pickUpMethod = document.querySelector('#pickUpOpcion');
 
-
-// Eventu
+// Tercero: realizar el evento sobre el form.
 const showDelivery = deliveryMethodForm.addEventListener('click', function () {
-  // Tercero: guardar el valor clickeado por el usuario
+  // Cuarto: guardar el valor clickeado por el usuario
   let deliveryMethodChosen = deliveryMethodForm.methodChosen.value;
 
+  // Quinto: hacer las comparaciones para que se escondan o se agreguen las clases.
   if (deliveryMethodChosen === "Entrega a domicilio") {
     deliveryMethod.classList.remove('hidden');
     pickUpMethod.classList.add('hidden');
