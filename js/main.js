@@ -24,7 +24,7 @@ btnAñadir.forEach((i) => i.addEventListener("click", añadirHandler));
 
 
 
-//-------------------------------- AGOS
+// TODO ------------------------------ AGOS
 
 // Selección del metodo de delivery de la compra
 
@@ -36,20 +36,22 @@ const deliveryMethodForm = document.querySelector('#selectionDelivery');
 
 const deliveryMethod = document.querySelector('#deliveryOption');
 
-const pickUpMethod = document.querySelector('#pickUpOpcion');;
+const pickUpMethod = document.querySelector('#pickUpOpcion');
 
 
-// Tercero: guardar el valor clickeado por el usuario
-const deliveryMethodChosen = deliveryMethodForm.methodChosen.value;
-
-// Cuarto: si cuando clickea el valor es igual a entrega a domilicio que sale la clase hidden del elemento.
+// Eventu
 const showDelivery = deliveryMethodForm.addEventListener('click', function () {
+  // Tercero: guardar el valor clickeado por el usuario
+  let deliveryMethodChosen = deliveryMethodForm.methodChosen.value;
 
   if (deliveryMethodChosen === "Entrega a domicilio") {
     deliveryMethod.classList.remove('hidden');
+    pickUpMethod.classList.add('hidden');
   } else {
     pickUpMethod.classList.remove('hidden');
+    deliveryMethod.classList.add('hidden');
   }
+
 });
 
-// ! Entra siempre por el else!!!!!!!!!!!!
+

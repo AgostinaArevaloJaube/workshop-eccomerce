@@ -1,5 +1,5 @@
 # Agos:
-	* Terminar de maquetar
+	* Terminar de maquetar - ready
 	* Opcion retirar el producto o enviarlo .
 
 # Iara:
