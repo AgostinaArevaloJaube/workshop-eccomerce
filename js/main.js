@@ -47,7 +47,12 @@ const btnAñadir = document.querySelectorAll(".btn_añadir");
 const añadirHandler = (e) => {
   //tomar id del producto seleccionado
   const id = parseInt(e.target.attributes.id.value);
-  let carro = JSON.parse(localStorage.getItem("carro"));
+  if (localStorage.getItem("carro")) {
+    var carro = JSON.parse(localStorage.getItem("carro"));
+  } else {
+    var carro = [];
+  }
+
   //buscar en array principal de productos cuala coincide con el id del producto
   products.forEach((i) => {
     if (i.id === id) {
