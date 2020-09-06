@@ -11,31 +11,37 @@ let products = [
     nombre: "Beni Shoga",
     valor: 10,
     id: 1,
+    img: "assets/store_files/image-asset.jpeg",
   },
   {
     nombre: "Do Chua",
     valor: 10,
     id: 2,
+    img: "assets/store_files/image-asset(1).jpeg",
   },
   {
     nombre: "Limones",
     valor: 10,
     id: 3,
+    img: "assets/store_files/image-asset(2).jpeg",
   },
   {
     nombre: "Sauerkraut",
     valor: 10,
     id: 4,
+    img: "assets/store_files/image-asset(3).jpeg",
   },
   {
     nombre: "Alcaparras",
     valor: 10,
     id: 5,
+    img: "assets/store_files/image-asset(4).jpeg",
   },
   {
     nombre: "Remolachas",
     valor: 10,
     id: 6,
+    img: "assets/store_files/image-asset(5).jpeg",
   },
 ];
 
@@ -56,8 +62,8 @@ const añadirHandler = (e) => {
   //buscar en array principal de productos cuala coincide con el id del producto
   products.forEach((i) => {
     if (i.id === id) {
-      //agregar el id al array
-      carro.push(i.id);
+      //agregar el item al array
+      carro.push(i);
     }
   });
   localStorage.setItem("carro", JSON.stringify(carro));
