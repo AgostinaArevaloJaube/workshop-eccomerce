@@ -11,6 +11,7 @@ var entrega = document.querySelector(".rec_detalles span")
 //EJECUCION
 agregarItems();
 entregaFuncion();
+
 //FUNCIONES
 function agregarItems() {
   for (let index = 0; index < arrayItems.length; index++) {

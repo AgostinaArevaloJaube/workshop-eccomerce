@@ -20,4 +20,24 @@
         width: 80%;
         justify-content: space-between;
     }
+
+    &_detalles span{
+        color: royalblue;
+    }
+
+    &_h2 span{
+        color: seagreen;
+        &::before{
+            content: "$";
+        }
+    }
+
+    &_list li, &_precios li{
+        list-style: none;
+
+        &::before{
+            content:"> ";
+            color: teal;
+        }
+    }
 }

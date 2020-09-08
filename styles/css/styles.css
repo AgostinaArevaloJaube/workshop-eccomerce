@@ -337,3 +337,24 @@ body .article__container .article__content .btn_añadir:active {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.rec_detalles span {
+  color: royalblue;
+}
+
+.rec_h2 span {
+  color: seagreen;
+}
+
+.rec_h2 span::before {
+  content: "$";
+}
+
+.rec_list li, .rec_precios li {
+  list-style: none;
+}
+
+.rec_list li::before, .rec_precios li::before {
+  content: "> ";
+  color: teal;
+}
