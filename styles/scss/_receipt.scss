@@ -13,4 +13,11 @@
         margin-top: 0.5em;
         font-size:3em;
     }
+
+    &_contenedor{
+        margin-top: 2em;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
 }

@@ -326,4 +326,14 @@ body .article__container .article__content .btn_añadir:active {
   margin-top: 0.5em;
   font-size: 3em;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.rec_contenedor {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

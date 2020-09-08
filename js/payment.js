@@ -21,9 +21,11 @@ const showDelivery = deliveryMethodForm.addEventListener("click", function () {
   if (deliveryMethodChosen === "Entrega a domicilio") {
     deliveryMethod.classList.remove("hidden");
     pickUpMethod.classList.add("hidden");
+    localStorage.setItem("entrega", 0)
   } else {
     pickUpMethod.classList.remove("hidden");
     deliveryMethod.classList.add("hidden");
+    localStorage.setItem("entrega", 1)
   }
 });
 
