@@ -7,10 +7,9 @@ var lista = document.querySelector(".rec_list");
 agregarItems();
 //FUNCIONES
 function agregarItems() {
-    for (let index = 0; index < arrayItems.length; index++) {
-        var agregado = lista.createChild("LI");
-        agregado.innerHTML= arrayItems[index].nombre;
-        lista.appendChild(agregado);
-    }
+  for (let index = 0; index < arrayItems.length; index++) {
+    var agregado = document.createElement("LI");
+    agregado.innerHTML = arrayItems[index].nombre;
+    lista.appendChild(agregado);
+  }
 }
-

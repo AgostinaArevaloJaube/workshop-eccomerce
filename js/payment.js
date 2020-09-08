@@ -89,18 +89,21 @@ validacionNumber();
 validacionMonthYear();
 //Validación de la compra, una vez completados y validados los datos se da el OK de la compra
 //Quise redireccionar al inicio pero no pude, si alguien sabe como se hace, bienvenido sea su aporte
-function validacionCompra() {
+
+document
+  .getElementById("submit_btn")
+  .addEventListener("click", validacionCompra);
+function validacionCompra(e) {
+  e.preventDefault();
   if (
     !validacionNumber() ||
     !validacionName() ||
     !validacionCVV() ||
     !validacionMonthYear()
   ) {
-    alert(
-      "Corrobore sus datos, ningun casillero puede permanecer de color rojo.\n No pudo realizarse la compra."
-    );
+    alert("Error en el ingreso de los datos");
   } else {
-    alert("Los datos son correctos, su compra ha sido realizada!");
+    window.location.href = "/receipt.html";
     /*var ok = window.confirm("¿Desea continuar navegando en nuestra web?");
     if (ok){
       redireccionamiento();
