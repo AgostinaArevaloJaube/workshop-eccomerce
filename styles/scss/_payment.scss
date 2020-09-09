@@ -1,82 +1,103 @@
 // MAIN
 .grayBackground {
-	background-color: rgb(245, 245, 245);
+  background-color: rgb(245, 245, 245);
 }
-.noBorder{
-	border: none;
-}
-
-// Carrito de compras 
-.cart {
-	display: flex;
-	justify-content: space-around;
-	padding: 15px;
+.noBorder {
+  border: none;
 }
 
-.productSelectedImage {
-	width: 15%;
+// Carrito de compras
+// .cart {
+// 	display: flex;
+// 	justify-content: space-around;
+// 	padding: 15px;
+// }
+
+// .productSelectedImage {
+// 	width: 15%;
+// }
+
+// .totalAmount {
+// 	font-weight: 500;
+// 	font-size: 20px;
+// }
+
+#cart {
+  li {
+    img {
+      width: 100px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btnDelete {
+      padding: 2.5px 8px;
+      border: none;
+      margin-left: 20px;
+      border-radius: 5px;
+      background-color: #5a5959;
+      color: white;
+    }
+  }
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e5c47c;
 }
-
-
 .totalAmount {
-	font-weight: 500;
-	font-size: 20px;
+  text-align: right;
+  font-size: 24px;
 }
-
 
 // Formularios
 .forms_container {
-	padding: 10px;
+  padding: 10px;
 }
 
 .formStyle {
-	margin: 40px auto;
-	padding: 30px;
-	width: 60%;
-	border: 2px solid rgb(221, 221, 221);
-	background-color: white;
+  margin: 40px auto;
+  padding: 30px;
+  width: 60%;
+  border: 2px solid rgb(221, 221, 221);
+  background-color: white;
 }
 
 .deliveryStyle {
-	margin: 40px auto;
-	padding: 30px;
-	width: 95%;
-	border: 2px solid rgb(221, 221, 221);
+  margin: 40px auto;
+  padding: 30px;
+  width: 95%;
+  border: 2px solid rgb(221, 221, 221);
 }
 
 .chooseMethodStyle {
-	padding: 10px;
-	display: inline;
-
+  padding: 10px;
+  display: inline;
 }
 
 .formTitle {
-	font-weight: 500;
-	font-size: 1.5em;
-	padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.5em;
+  padding-bottom: 10px;
 }
 
-
 .paymentButtons {
-		margin: 15px auto;
-		padding: 10px 10px;
-		width: 50%;
-		display: block;
-		border: none;
-		font-size: 20px;
-		color: white;
-		background-color: rgb(90, 89, 89);
-		text-align: center;
+  margin: 15px auto;
+  padding: 10px 10px;
+  width: 50%;
+  display: block;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(90, 89, 89);
+  text-align: center;
 }
 
 .inputs__style {
-	padding: 10px;
-	display: block;
-	margin: 10px auto;
-	width: 100%;
-	border: 1px solid rgb(221, 221, 221);
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  border: 1px solid rgb(221, 221, 221);
 }
 
 .hidden {
-	display: none;
+  display: none;
 }

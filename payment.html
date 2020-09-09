@@ -39,19 +39,18 @@
     <main class="grayBackground">
       <section class="forms_container">
         <!-- Carrito -->
-        <section class="formStyle" action="">
-          <p class="formTitle">Resumen del pedido</p>
+        <!-- <section class="formStyle" action="">
+        <p class="formTitle">Resumen del pedido</p>
 
-          <section class="cart">
-            <img
-              class="productSelectedImage"
-              src="/assets/store_files/image-asset(2).jpeg"
-              alt=""
-            />
-            <p>Descripción del producto</p>
-            <p>Cantidad</p>
-            <p>Precio</p>
-          </section>
+        <section class="cart">
+          <img class="productSelectedImage" src="/assets/store_files/image-asset(2).jpeg" alt="" />
+          <p>Descripción del producto</p>
+          <p>Cantidad</p>
+          <p>Precio</p>
+        </section> -->
+        <section class="formStyle" action="">
+          <ul id="cart"></ul>
+
           <p class="totalAmount">Total</p>
         </section>
 
@@ -175,7 +174,6 @@
         </section>
 
         <!-- Pago -->
-
         <form
           name="paymentMethod"
           class="formStyle"
@@ -187,6 +185,7 @@
             <label for="card-number">Número de Tarjeta</label>
             <input
               type="num"
+              oninput="return validacionNumber()"
               id="card-number"
               class="input-cart-number inputs__style"
               maxlength="16"
@@ -200,6 +199,7 @@
             >
             <input
               type="text"
+              oninput="return validacionName()"
               id="card-holder"
               class="inputs__style"
               required
@@ -210,44 +210,46 @@
             <div class="select">
               <select
                 class="inputs__style"
+                onclick="return validacionMonthYear()"
                 id="card-expiration-month"
                 placeholder="Mes"
                 required
               >
-                <option>Mes</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
+                <option value="">Mes</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
               </select>
             </div>
             <div class="select">
               <select
                 class="inputs__style"
+                onclick="return validacionMonthYear()"
                 id="card-expiration-year"
                 placeholder="Año"
                 required
               >
-                <option>Año</option>
-                <option>2020</option>
-                <option>2021</option>
-                <option>2022</option>
-                <option>2023</option>
-                <option>2024</option>
-                <option>2025</option>
-                <option>2026</option>
-                <option>2027</option>
-                <option>2028</option>
-                <option>2029</option>
-                <option>2030</option>
+                <option value="">Año</option>
+                <option value="1">2020</option>
+                <option value="2">2021</option>
+                <option value="3">2022</option>
+                <option value="4">2023</option>
+                <option value="5">2024</option>
+                <option value="6">2025</option>
+                <option value="7">2026</option>
+                <option value="8">2027</option>
+                <option value="9">2028</option>
+                <option value="10">2029</option>
+                <option value="11">2030</option>
               </select>
             </div>
           </fieldset>
@@ -255,6 +257,7 @@
             <input
               class="inputs__style"
               type="text"
+              oninput="return validacionCVV()"
               id="card-ccv"
               maxlength="3"
               placeholder="CVV"
@@ -262,6 +265,7 @@
             />
           </fieldset>
           <input
+            id="submit_btn"
             class="paymentButtons"
             type="submit"
             value="Confirmar compra"
